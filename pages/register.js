@@ -40,7 +40,7 @@ export default function Register() {
     return(
         <div className={styles.login_main}>
             <Head>
-                <title>Keio Men's Lacrosse Register</title>
+                <title>Keio Men&apos;s Lacrosse Register</title>
             </Head>
             <header className={styles.login_header}>
                 <Image className={styles.login_logo_1} src={logo_1} objectFit='contain' quality={100} alt='logo_1'/>

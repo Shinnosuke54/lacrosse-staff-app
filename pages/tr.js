@@ -12,7 +12,7 @@ export default function Trainer() {
   return(
     <div>
       <Head>
-        <title>Keio Men's Lacrosse</title>
+        <title>Keio Men&apos;s Lacrosse</title>
       </Head>
 
       {session ? Tr() : Guest()}

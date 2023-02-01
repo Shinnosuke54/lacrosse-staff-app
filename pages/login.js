@@ -36,7 +36,7 @@ export default function Login() {
     return(
         <div>
             <Head>
-                <title>Keio Men's Lacrosse</title>
+                <title>Keio Men&apos;s Lacrosse</title>
             </Head>
             <header className={styles.login_header}>
                 <Image className={styles.login_logo_1} src={logo_1} quality={100} alt='logo_1' />
@@ -75,7 +75,7 @@ export default function Login() {
                 <button className={styles.login_button} type='submit'>Login</button>
             </form>
             <p className={styles.login_text}>
-                Don't have account yet? <Link className={styles.login_link} href='/register'>Sign Up</Link>
+                Don&apos;t have account yet? <Link className={styles.login_link} href='/register'>Sign Up</Link>
             </p>
         </div>
     )

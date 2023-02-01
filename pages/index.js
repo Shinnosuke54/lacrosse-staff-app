@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Keio Men's Lacrosse</title>
+        <title>Keio Men&apos;s Lacrosse</title>
       </Head>
 
       {session ? User({session, handleSignOut}) : Guest()}
@@ -44,7 +44,7 @@ function User({session, handleSignOut}) {
   return(
     <div className={styles.relay_main}>
             <Head>
-                <title>Keio Men's Lacrosse</title>
+                <title>Keio Men&apos;s Lacrosse</title>
             </Head>
             <header className={styles.header}>
                 <Image className={styles.logo_1} src={logo_1} quality={100} alt='logo_1' />
@@ -54,13 +54,13 @@ function User({session, handleSignOut}) {
             </h1>
 
             <div className={styles.relay_grid}>
-                <a className={styles.relay_card} href='/tr'>
+                <Link className={styles.relay_card} href='./tr'>
                         <h2>for Trainers</h2>
-                </a>
+                </Link>
                 
-                <a className={styles.relay_card} href='/mg'>
+                <Link className={styles.relay_card} href='./mg'>
                         <h2>for Managers</h2>
-                </a>
+                </Link>
                 <h3 onClick={handleSignOut} className={styles.signout}>
                   Sign Out
                 </h3>

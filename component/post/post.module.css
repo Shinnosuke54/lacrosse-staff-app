@@ -1,0 +1,33 @@
+
+.card {
+    margin: 1rem;
+    padding: 1.5rem;
+    /* text-align: left; */
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width:  200px;
+    border-radius: 15px;
+    color: #030217;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    text-decoration: none;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  

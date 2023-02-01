@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Tr.module.css'
+import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import logo_1 from '../public/logo_1.png'
 import { useState } from 'react'
 import { getSession, useSession, signOut } from 'next-auth/react'
-import logo_1 from '../public/logo_1.png'
 
 export default function Home() {
 
@@ -42,30 +42,19 @@ function Guest() {
 //ここにログイン後のメインページを置く
 function User({session, handleSignOut}) {
   return(
-    <div className={styles.relay_main}>
-            <Head>
-                <title>Keio Men's Lacrosse</title>
-            </Head>
-            <header className={styles.header}>
-                <Image className={styles.logo_1} src={logo_1} quality={100} alt='logo_1' />
-            </header>
-            <h1 className={styles.relay_title}>
-                for Staff
-            </h1>
-
-            <div className={styles.relay_grid}>
-                <a className={styles.relay_card} href='/tr'>
-                        <h2>for Trainers</h2>
-                </a>
-                
-                <a className={styles.relay_card} href='/mg'>
-                        <h2>for Managers</h2>
-                </a>
-                <h3 onClick={handleSignOut} className={styles.signout}>
-                  Sign Out
-                </h3>
-            </div>
-    </div>
+    <main>
+      <div>
+        <Head>
+          <title>Keio Men's Lacrosse</title>
+        </Head>
+        <header className={styles.login_header}>
+          <Image className={styles.login_logo_1} src={logo_1} quality={100} alt='logo_1' />
+        </header>
+        ログイン後です。
+        {session.user.email}
+        <button onClick={handleSignOut}>Sign out</button>
+      </div>
+    </main>
   )
 }
 

@@ -7,7 +7,7 @@ export default function Layout({children}) {
     return(
         <div className={styles.login_main}>
             <Head>
-                <title>Keio Men's Lacrosse</title>
+                <title>Keio Men&apos;s Lacrosse</title>
             </Head>
             <headeer className={styles.login_header}>
                 <Image className={styles.login_logo_1} src={logo_1} quality={100} alt='logo_1' />

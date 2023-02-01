@@ -23,7 +23,7 @@ export default function Trainer() {
 }
 
 
-function Tr() {
+export default function Tr() {
   return(
     <div className={styles.container}>
       <Head>

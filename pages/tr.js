@@ -7,7 +7,7 @@ import { getSession, useSession, signOut } from 'next-auth/react'
 
 
 export default function Trainer() {
-  const {data: session} = useSession()
+  // const {data: session} = useSession()
   
   return(
     <div>
@@ -15,7 +15,7 @@ export default function Trainer() {
         <title>Keio Men&apos;s Lacrosse</title>
       </Head>
 
-      {session ? Tr() : Guest()}
+      {/* {session ? Tr() : Guest()} */}
     </div>
   )
 
@@ -72,25 +72,25 @@ function Tr() {
   )
 }
 
-function Guest() {
-  return(
-    <div></div>
-  )
-}
+// function Guest() {
+//   return(
+//     <div></div>
+//   )
+// }
 
-export async function getServerSideProps({req}) {
-  const session = await getSession({req})
+// export async function getServerSideProps({req}) {
+//   const session = await getSession({req})
 
-  if(!session){
-    return{
-      redirect:{
-        destination:'/login',
-        permanent: false
-      }
-    }
-  }
+//   if(!session){
+//     return{
+//       redirect:{
+//         destination:'/login',
+//         permanent: false
+//       }
+//     }
+//   }
 
-  return {
-    props: {session}
-  }
-}
+//   return {
+//     props: {session}
+//   }
+// }

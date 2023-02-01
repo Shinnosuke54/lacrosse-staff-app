@@ -31,8 +31,8 @@ export default function Register() {
             body:JSON.stringify(values)
         }
 
-        await fetch('http://localhost:3001/api/auth/signup', options).then(res => res.json()).then((data) => {
-            if(data) router.push('http://localhost:3001')
+        await fetch('https://lacrosse-staff-app.vercel.app/api/auth/signup', options).then(res => res.json()).then((data) => {
+            if(data) router.push('https://lacrosse-staff-app.vercel.app/')
         })
 
     }
